@@ -3,14 +3,38 @@
 //------------------------------
 #include <string>
 #include "catch.hpp"
+#include <iostream>
 using Catch::Matchers::Equals;
+using namespace std;
 //------------------------------
 
 // Fix the following class
 class Complex {
-    void operator>>(std::string&) const;
-    void operator<<(const std::string&);
+  private: 
+    int im,re;
+    int real, imaginary;
+  public:
+    Complex c(int im, int re)
+    {
+     int x=0;
+     int y=0;
+    }
+    Complex c();
+    c.re();
+    c.im();
+    cin.read>>(c.re)>>cin.read(c.im);
+    void operator>>(std::string&) const
+    {
+      ostringstream output; 
+      output<<"<a>±<b>i";
+    };
+    void operator<<(const std::string&)
+    {
+      int stoi(const std::string& str);
+    };
 };
+
+Complex::Complex(<brace-enclosed initializer list>);
 
 //------------------------------
 //   DO NOT MODIFY TEST CASES
