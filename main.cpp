@@ -12,6 +12,7 @@ using namespace std;
 class Complex {
   private: 
     int im,re;
+    int real, imaginary;
   public:
     Complex c(int im, int re)
     {
