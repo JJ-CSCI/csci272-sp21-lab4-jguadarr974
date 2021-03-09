@@ -3,6 +3,7 @@
 //------------------------------
 #include <string>
 #include "catch.hpp"
+#include <iostream>
 using Catch::Matchers::Equals;
 using namespace std;
 //------------------------------
@@ -10,14 +11,13 @@ using namespace std;
 // Fix the following class
 class Complex {
   private: 
-    int num,num2, i;
-    Complex c(int,int);
-    Complex d(int, int)
+    int im,re;
+  public:
+    Complex c(int im, int re)
     {
      int x=0;
      int y=0;
     }
-  public:
     Complex c();
     c.re();
     c.im();
@@ -32,6 +32,8 @@ class Complex {
       int stoi(const std::string& str);
     };
 };
+
+Complex::Complex(<brace-enclosed initializer list>);
 
 //------------------------------
 //   DO NOT MODIFY TEST CASES
